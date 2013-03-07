@@ -1,0 +1,60 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ChatRoom	chatserver.py	/^class ChatRoom(Room):$/;"	c	inherits:Room
+ChatServer	chatserver.py	/^class ChatServer(dispatcher):$/;"	c	inherits:dispatcher
+ChatServer	simple_edition/simple_chat.py	/^class ChatServer(dispatcher):$/;"	c	inherits:dispatcher
+ChatSession	chatserver.py	/^class ChatSession(async_chat):$/;"	c	inherits:async_chat
+ChatSession	simple_edition/simple_chat.py	/^class ChatSession(async_chat):$/;"	c	inherits:async_chat
+CommandHandler	chatserver.py	/^class CommandHandler:$/;"	c	inherits:
+EndSession	chatserver.py	/^class EndSession(Exception):$/;"	c	inherits:Exception
+LoginRoom	chatserver.py	/^class LoginRoom(Room):$/;"	c	inherits:Room
+LogoutRoom	chatserver.py	/^class LogoutRoom(Room):$/;"	c	inherits:Room
+NAME	chatserver.py	/^NAME='TestChat'$/;"	v
+NAME	simple_edition/simple_chat.py	/^NAME='TestChat'$/;"	v
+PORT	chatserver.py	/^PORT=5005$/;"	v
+PORT	simple_edition/simple_chat.py	/^PORT=6005$/;"	v
+Room	chatserver.py	/^class Room(CommandHandler):$/;"	c	inherits:CommandHandler
+__init__	chatserver.py	/^    def __init__(self,port,name):$/;"	m	class:ChatServer	access:public
+__init__	chatserver.py	/^    def __init__(self,server):$/;"	m	class:Room	access:public
+__init__	chatserver.py	/^    def __init__(self,server,sock):$/;"	m	class:ChatSession	access:public
+__init__	simple_edition/simple_chat.py	/^    def __init__(self,port,name):$/;"	m	class:ChatServer	access:public
+__init__	simple_edition/simple_chat.py	/^    def __init__(self,server,sock):$/;"	m	class:ChatSession	access:public
+add	chatserver.py	/^    def add(self,session):$/;"	m	class:ChatRoom	access:public
+add	chatserver.py	/^    def add(self,session):$/;"	m	class:LoginRoom	access:public
+add	chatserver.py	/^    def add(self,session):$/;"	m	class:LogoutRoom	access:public
+add	chatserver.py	/^    def add(self,session):$/;"	m	class:Room	access:public
+async_chat	chatserver.py	/^from asynchat import async_chat$/;"	i
+async_chat	simple_edition/simple_chat.py	/^from asynchat import async_chat$/;"	i
+asyncore	chatserver.py	/^import socket,asyncore$/;"	i
+asyncore	simple_edition/simple_chat.py	/^import socket,asyncore$/;"	i
+broadcast	chatserver.py	/^    def broadcast(self,line):$/;"	m	class:Room	access:public
+broadcast	simple_edition/simple_chat.py	/^    def broadcast(self,line):$/;"	m	class:ChatServer	access:public
+collect_incoming_data	chatserver.py	/^    def collect_incoming_data(self,data):$/;"	m	class:ChatSession	access:public
+collect_incoming_data	simple_edition/simple_chat.py	/^    def collect_incoming_data(self,data):$/;"	m	class:ChatSession	access:public
+disconnect	simple_edition/simple_chat.py	/^    def disconnect(self,session):$/;"	m	class:ChatServer	access:public
+dispatcher	chatserver.py	/^from asyncore import dispatcher$/;"	i
+dispatcher	simple_edition/simple_chat.py	/^from asyncore import dispatcher$/;"	i
+do_login	chatserver.py	/^    def do_login(self,session,line):$/;"	m	class:LoginRoom	access:public
+do_logout	chatserver.py	/^    def do_logout(self,session,line):$/;"	m	class:Room	access:public
+do_look	chatserver.py	/^    def do_look(self,session,line):$/;"	m	class:ChatRoom	access:public
+do_say	chatserver.py	/^    def do_say(self,session,line):$/;"	m	class:ChatRoom	access:public
+do_who	chatserver.py	/^    def do_who(self,session,line):$/;"	m	class:ChatRoom	access:public
+enter	chatserver.py	/^    def enter(self,room):   $/;"	m	class:ChatSession	access:public
+found_terminator	chatserver.py	/^    def found_terminator(self):$/;"	m	class:ChatSession	access:public
+found_terminator	simple_edition/simple_chat.py	/^    def found_terminator(self):$/;"	m	class:ChatSession	access:public
+handle	chatserver.py	/^    def handle(self,session,line):$/;"	m	class:CommandHandler	access:public
+handle_accept	chatserver.py	/^    def handle_accept(self):$/;"	m	class:ChatServer	access:public
+handle_accept	simple_edition/simple_chat.py	/^    def handle_accept(self):$/;"	m	class:ChatServer	access:public
+handle_close	chatserver.py	/^    def handle_close(self):$/;"	m	class:ChatSession	access:public
+handler_close	simple_edition/simple_chat.py	/^    def handler_close(self):$/;"	m	class:ChatSession	access:public
+remove	chatserver.py	/^    def remove(self,session):$/;"	m	class:ChatRoom	access:public
+remove	chatserver.py	/^    def remove(self,session):$/;"	m	class:Room	access:public
+s	simple_edition/simple_chat.py	/^    s=ChatServer(PORT,NAME)$/;"	v
+socket	chatserver.py	/^import socket,asyncore$/;"	i
+socket	simple_edition/simple_chat.py	/^import socket,asyncore$/;"	i
+unknown	chatserver.py	/^    def unknown(self,session,cmd):$/;"	m	class:CommandHandler	access:public
+unknown	chatserver.py	/^    def unknown(self,session,cmd):$/;"	m	class:LoginRoom	access:public
